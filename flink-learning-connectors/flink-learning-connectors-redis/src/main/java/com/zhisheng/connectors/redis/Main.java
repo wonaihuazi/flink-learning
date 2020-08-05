@@ -53,7 +53,7 @@ public class Main {
                         out.collect(new Tuple2<>(value.getId().toString(), value.getPrice().toString()));
                     }
                 });
-//        product.print();
+        product.print();
 
         //单个 Redis
         FlinkJedisPoolConfig conf = new FlinkJedisPoolConfig.Builder().setHost(parameterTool.get("redis.host")).build();
